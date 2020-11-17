@@ -1,0 +1,27 @@
+숙제 : 01 분반 : 09
+학번 : 2017117986 이름 : 이근정
+♣ Problem 8.2 ( (a)의 ANS : |Vov| = 0.35V, VSG = 1.15V, VS=1.15V, VD=-1.5V // (b)의 ANS : -2.3V <= VICM <= 0.95V )
+(a) 증폭기가 활성영역에서 동작한다고 가정하고 트랜지스터 Q1,Q2는 정합되어 있기 때문에 ID1 = ID2 = 0.25mA
+ID = 1/2*kn*|Vov|^2 이다. 따라서 |Vov| = 0.35V
+VSG = |Vtp| + |Vov| = 1.15V
+VS = 0 + VSG = 1.15V(왜냐하면 VG1 = VG2 = 0)
+VD1 = VD2 = -VSS + ID*RD = -1.5V
+
+(b) VCM(max) = 2.5-0.4-VSG = 0.95V (전류원으로 동작하기 위해 트랜지스터의 최소 양단전압이 존재해야 한다.)
+VCM(min) = VD-|Vtp|=-1.5-0.8=-2.3V (트랜지스터가 포화영역에서 동작하여야 한다.)
+따라서 ICMR은 -2.3V<= VICM <= 0.95V
+
+♣ Problem 8.6 ( ANS : R=12.5Kohm, RD=4Kohm, Q1,Q2의 W/L=44.4 Q3의 W/L=88.8 Q4의 W/L=22.2, -0.2V<=VICM<=0.5V )
+VG1=VG2=0V, ID1=ID2=0.2mA, VD1-VD2=0.1V
+VDD-ID*RD=0.1V 따라서 RD=4Kohm
+ID=1/2*kn*|Vov|^2이므로 Q1,Q2의 W/L=44.4 Q3의 W/L=88.8
+전류거울로 인해 ID3=4ID4이므로 Q4의 W/L=22.2
+VGS4=VGS3=Vtn+Vov=0.55V 이므로 R=12.5Kohm
+VCM(min)은 Q3가 전류원으로 동작하기 위해 Q3양단 최소전압이 존재해야 한다.
+따라서 VICM(min)= -0.2V
+VCM(max)는 Q1,Q2가 활성역역(SAT영역)에서 동작하는 조건으로부터 나온다.
+따라서 VICM(max)=0.5V
+따라서 ICMR은 -0.2V <= VICM <= 0.5V
+
+
+

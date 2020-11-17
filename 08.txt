@@ -1,0 +1,42 @@
+<html lang="en-US"> <body>
+<p> 숙제: 08 분반: 09 <br> <font color="blue">
+학번: 2017117986  이름: 이근정  </font> </p>
+
+<p> &clubs; Problem 2.65
+&nbsp; (Ans: See the follow answer)</p>
+v<sub>O</sub> = v<sub>O1</sub> + v<sub>O2</sub><br>
+v<sub>O1</sub> : v<sup>+</sup> = v<sup>-</sup> = &beta;v<sub>O1</sub> / 2<br>
+(v<sub>1</sub> - &beta;v<sub>O1</sub>/2) / R = (&beta;v<sub>O1</sub>/2 - v<sub>O</sub>) / R &rArr; v<sub>O1</sub> = v<sub>1</sub> / (&beta; - 1)<br>
+v<sub>O2</sub> : v<sup>+</sup> = v<sup>-</sup> = v<sub>O2</sub> / 2 <br>
+v<sub>2</sub> - v<sub>O2</sub>/2 = v<sub>O2</sub>/2 - &beta;v<sub>O2</sub> &rArr; v<sub>O2</sub> = v<sub>2</sub> / (1 - &beta;)<br>
+v<sub>O</sub> = v<sub>O1</sub> + v<sub>O2</sub> = 1/(1 - &beta;) * (v<sub>2</sub> - v<sub>1</sub>)<br>
+A<sub>d</sub> = v<sub>O</sub> / (v<sub>2</sub> - v<sub>1</sub>) = 1 / (1 - &beta;)<br>
+A<sub>d</sub> = 10V/V &rArr; &beta; = 0.9 = R<sub>6</sub> / (R<sub>5</sub> + R<sub>6</sub>)<br>
+R<sub>Id</sub> = 2R = 2M&Omega; &rArr; R = 1M&Omega;<br>
+R<sub>5</sub> + R<sub>6</sub> &#8804; R/100 &rArr; R<sub>5</sub> + R<sub>6</sub> &#8804; 10k&Omega;<br>
+R<sub>6</sub> = 6.8k&Omega; &rArr; R<sub>5</sub> = 756&Omega;<br>
+ 
+<p> &clubs; Problem 2.80
+&nbsp; (Ans: See the follow answers)</p>
+Z<sub>2</sub> = R<sub>2</sub> || 1/sC, Z<sub>1</sub> = R<sub>1</sub><br>
+V<sub>o</sub> / V<sub>i</sub> = - Z<sub>2</sub> / Z<sub>1</sub> = - Y<sub>1</sub> / Y<sub>2</sub> = - 1/R<sub>1</sub> / (1/R<sub>2</sub> + sC) = - (R<sub>2</sub>/R<sub>1</sub>) / (1 + sCR<sub>2</sub>)<br>
+This circuit is low-pass type<br>
+3dB frequency is w<sub>0</sub> = 1 / CR<sub>2</sub><br>
+R<sub>in</sub> = R<sub>1</sub> = 10k&Omega;<br>
+dc gain = 40dB = 100<br>
+<b>&there4; 100 = R<sub>2</sub> / R<sub>1</sub> &rArr; R<sub>2</sub> = 100R<sub>1</sub> = 1M&Omega;</b><br>
+3dB frequency at 1kHz<br>
+w<sub>0</sub> = 2&pi; * 1 * 10<sup>3</sup> = 1 / CR<sub>2</sub><br>
+<b>&there4; C = 1 / (2&pi; * 1 * 10<sup>3</sup> * 10<sup>6</sup>) = 0.16nF<br></b>
+
+<p> &clubs; Problem 2.86
+&nbsp; (Ans: See the follow answers)</p>
+Z<sub>1</sub> = R<sub>1</sub> + 1/sC, Z<sub>2</sub> = R<sub>2</sub><br>
+V<sub>o</sub> / V<sub>i</sub> = - Z<sub>2</sub> / Z<sub>1</sub> = - R<sub>2</sub> / (R<sub>1</sub> + 1/sC) = - (R<sub>2</sub>/R<sub>1</sub>)s / (s + 1/CR<sub>1</sub>)<br>
+This circuit is high-pass type<br>
+High-frequency gain is - R<sub>2</sub>/R<sub>1</sub><br>
+3dB frequency w<sub>3dB</sub> = 1/CR<sub>1</sub><br>
+For input resistance of 1k&Omega;, R<sub>1</sub> = 1k&Omega; &rArr; R<sub>2</sub> = 100k&Omega;, gain is 40dB<br>
+f<sub>3dB</sub> = 2kHz &rArr; 1/2&pi;CR<sub>1</sub> = 2 * 10<sup>3</sup><br>
+<b>&there4;C = 79nF<br>
+ f(unity gain) = f<sub>3dB</sub> / 100 = 20Hz</b><br></body></html>
